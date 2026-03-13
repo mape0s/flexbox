@@ -1,17 +1,48 @@
 #menu-lateral{
-    width: 300px;
-    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 30vh;
     background-color: rgb(187, 187, 187);
     border-right: 2px solid black;
     font-family:sans-serif;
     text-align: center;
-    display: flex;
-    flex-direction: column;
     gap: 20px;
 }
 
-.quadrados{
-    height: 100;
-    width: 100;
-    color:orange;
+
+#color{
+    display: flex;
+    flex-direction: row ;
+    margin-left: 50px;
+}
+.amarelo{
+    height: 40px;
+    width: 40px;
+    background-color:yellow;
+
+}
+.azul{
+    height: 40px;
+    width: 40px;
+    background-color:blue;
+
+}
+.roxo{
+    height: 40px;
+    width: 40px;
+    background-color:purple;
+
+}
+.verde{
+    height: 40px;
+    width: 40px;
+    background-color:green;
+
+}
+.orange{
+    height: 40px;
+    width: 40px;
+    background-color:orange;
+
 }
