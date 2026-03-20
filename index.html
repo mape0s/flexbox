@@ -1,35 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Economia</title>
+    <title>Simulador Flexbox</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-    <body>
-        <div id = "menu-lateral">
-            <h1>SIMULADOR<br>FlaxBox</h1>
-            <h1>Preenchimento</h1>
-                <div id = "color"> 
-                    <div class = "roxo"></div>
-                     <div class = "marrom"></div>
-                      <div class = "azul"></div>
-                       <div class = "amarelo"></div>
-                        <div class = "laranja"></div>
-                         <div class = "verde"></div>
-                </div>
-            <h1>Formato</h1>
-            <div class="formato"></div>            
-            <div  class = "numeros">
-                 <input type="number" name="quantidade" min="1" max="200">
-            </div>
-            <h1>Alinhamento</h1>
-            <div class = "alinhamneto">
-                <select id="FLEX" name="carros">
-                    <option value="FLEX-DIRECTION">FLEX-DIRECTION</option>
-                    <option value="B" selected>FLEX-DIRECTION</option> 
-                    <option value="C">FLEX-DIRECTION</option>
-                </select>
-            </div>
-        </div>
-    </body>
+
+<body>
+
+<div id="menu-lateral">
+
+    <h2>SIMULADOR<br>Flexbox</h2>
+
+    <h3>Preenchimento</h3>
+    <div class="color">
+        <div class="cor roxo"></div>
+        <div class="cor marrom"></div>
+        <div class="cor azul"></div>
+        <div class="cor amarelo"></div>
+        <div class="cor orange"></div>
+        <div class="cor verde"></div>
+    </div>
+
+    <h3>Formato</h3>
+    <div class="formato">
+        <div id="quadrado" class="forma quad"></div>
+        <div id="circulo" class="forma circ"></div>
+    </div>
+
+    <h3>Tamanho</h3>
+    <input type="number" id="tamanho" value="100" min="50" max="200">
+
+    <h3>Alinhamento</h3>
+
+    <select id="direction">
+        <option value="row">row</option>
+        <option value="column">column</option>
+    </select>
+
+    <select id="justify">
+        <option value="flex-start">flex-start</option>
+        <option value="center">center</option>
+        <option value="space-between">space-between</option>
+        <option value="space-around">space-around</option>
+    </select>
+
+    <select id="align">
+        <option value="flex-start">flex-start</option>
+        <option value="center">center</option>
+        <option value="flex-end">flex-end</option>
+    </select>
+
+</div>
+
+<div id="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
 </html>
