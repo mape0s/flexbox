@@ -1,6 +1,8 @@
 var boxes = document.querySelectorAll('.box');
 var cores = document.querySelectorAll('.cor');
 var container = document.querySelector('#container');
+
+
 for (var i = 0; i < cores.length; i++) {
 
     cores[i].onclick = function () {
@@ -9,6 +11,10 @@ for (var i = 0; i < cores.length; i++) {
 
         for (var j = 0; j < boxes.length; j++) {
             boxes[j].style.backgroundColor = cor;
+            cores.forEach(function (c) {
+                c.style.border = "1px solid #ccc";
+            });
+            this.style.border = "1px solid black";
         }
 
     };

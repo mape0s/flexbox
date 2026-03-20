@@ -11,7 +11,7 @@ body{
     width: 220px;
     background-color: rgb(187, 187, 187);
     border-right: 2px solid black;
-    text-align: center;
+    text-align: cener;
     gap: 15px;
     padding: 10px;
 }
@@ -20,7 +20,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 30px);
     grid-template-rows: repeat(2, 30px);
-    gap: 0;
+    gap: 2px;
     justify-content: center;
 }
 
@@ -29,6 +29,10 @@ body{
     height: 30px;
     border: 1px solid #ccc;
     cursor: pointer;
+}
+
+.cor:hover{
+    border: 1px solid black;
 }
 
 .roxo{ background: #d36ad6; }
